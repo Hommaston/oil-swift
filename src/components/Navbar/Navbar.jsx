@@ -1,4 +1,3 @@
-import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Navbar.css';
 import Button from '../Button/Button';
@@ -17,7 +16,7 @@ function Navbar() {
             ))}
         </div>
         <div className="navbar_button">
-            <Button text="Log In"  style={{border: "2px solid var(--color-border-secondary)", borderRadius: "var(--radius-md)", color: "var(--color-text-secondary)",  }}/>
+            <Button text="Log In" onClick={() => navigate('/login')}  style={{border: "2px solid var(--color-border-secondary)", borderRadius: "var(--radius-md)", color: "var(--color-text-secondary)",  }}/>
             <Button text="Sign Up" onClick={() => navigate('/sign-up')} style={{ backgroundColor: "var(--color-bg-secondary)", borderRadius: "var(--radius-md)", color: "var(--color-text-tertiary)" }} />
         </div>
     </nav>

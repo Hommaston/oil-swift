@@ -6,7 +6,7 @@ function HeroImage() {
     <div className="hero_image">
       <img src={heroImage} alt="Engineers" width="600" height="450" />
     </div>
-  );png
+  )
 }
 
 export default HeroImage;
