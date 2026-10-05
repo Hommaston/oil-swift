@@ -1,0 +1,35 @@
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: var(--space-10);
+}
+.hero_content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+}
+.hero_title {
+    font-size: var(--text-3xl);
+    font-weight: var(--weight-bold);
+    color: var(--color-text-primary);
+    margin-bottom: var(--space-4);
+    letter-spacing: var(--space-1);
+}
+.hero_badge_text{
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-secondary);
+    padding: var(--space-2) var(--space-4);
+    border-radius: var(--radius-md);
+    font-size: var(--text-xs);
+    font-weight: var(--weight-semibold);
+}
+.hero_buttons {
+    display: flex;
+    gap: var(--space-6);
+}
+.hero_image {
+    display: flex;
+    justify-content: flex-end;
+    padding-left: var(--space-10);
+}
