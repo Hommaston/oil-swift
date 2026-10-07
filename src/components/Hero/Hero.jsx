@@ -3,7 +3,7 @@ import Button from '../Button/Button';
 import './Hero.css';
 function Hero() {
   return (
-    <section className="hero container">
+    <section className="hero">
       <div className="hero_content">
         <div className="hero_badge">
           <span className="hero_badge_text">THE PROFESSIONAL NETWORK OF NIGERIA OIL & GAS</span>
