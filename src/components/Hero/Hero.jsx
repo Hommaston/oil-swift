@@ -1,5 +1,5 @@
 import HeroImage from './HeroImage';
-import Button from '../Button/Button';
+import Button from '../shared/Button/Button';
 import './Hero.css';
 function Hero() {
   return (

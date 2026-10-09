@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import './Navbar.css';
-import Button from '../Button/Button';
+import Button from '../shared/Button/Button';
 
 const NAV_LINKS = ['Home', 'About', 'Services'];
 
