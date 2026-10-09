@@ -1,8 +1,18 @@
+@import "tailwindcss";
+
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
+
+@theme inline {
+  --color-mint: var(--color-bg-primary);
+  --color-brand: var(--color-text-secondary);
+  --color-gold: var(--color-text-highlight);
+}
+
 
 :root {
 
@@ -80,95 +90,3 @@ section{
   margin: 30px auto;
 }
 
-.auth-form {
-  width: 100%;
-  max-width: 420px;
-  margin: 40px auto;
-  padding: 32px;
-  background: #fff;
-  border: 1px solid #e5e7eb;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
-}
-
-.auth-form h2 {
-  margin: 0 0 24px;
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-.form-field {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  margin-bottom: 16px;
-}
-
-.form-field label {
-  font-size: 0.9rem;
-  font-weight: 600;
-  color: #374151;
-}
-
-.form-field input {
-  padding: 10px 12px;
-  font-size: 1rem;
-  border: 1px solid #d1d5db;
-  border-radius: 8px;
-  outline: none;
-  transition: border-color 0.2s, box-shadow 0.2s;
-}
-
-.form-field input:focus {
-  border-color: #2563eb;
-  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
-}
-
-.form-field input[aria-invalid="true"] {
-  border-color: #d93025;
-}
-
-.form-error {
-  margin: 0;
-  font-size: 0.85rem;
-  color: #d93025;
-}
-
-.auth-button {
-  width: 100%;
-  padding: 12px;
-  font-size: 1rem;
-  font-weight: 600;
-  color: #fff;
-  background: #2563eb;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.2s;
-}
-
-.auth-button:hover {
-  background: #1d4ed8;
-}
-
-.auth-success {
-  width: 100%;
-  max-width: 420px;
-  margin: 40px auto 0;
-  padding: 20px 24px;
-  background: #ecfdf5;
-  border: 1px solid #a7f3d0;
-  border-radius: 12px;
-  text-align: center;
-}
-
-.auth-success h1 {
-  margin: 0 0 8px;
-  font-size: 1.4rem;
-  color: #065f46;
-}
-
-.auth-success p {
-  margin: 4px 0;
-  color: #374151;
-}
